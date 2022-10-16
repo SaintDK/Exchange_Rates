@@ -1,4 +1,4 @@
-package com.example.retrofit_exchange_rates.model.cash
+package com.example.retrofit_exchange_rates
 
 
 import com.google.gson.annotations.SerializedName
@@ -153,7 +153,7 @@ data class Rates(
     @SerializedName("INR")
     val iNR: Double,
     @SerializedName("IQD")
-    val iQD: Double,
+    val iQD: Int,
     @SerializedName("IRR")
     val iRR: Int,
     @SerializedName("ISK")
@@ -167,7 +167,7 @@ data class Rates(
     @SerializedName("JPY")
     val jPY: Double,
     @SerializedName("KES")
-    val kES: Int,
+    val kES: Double,
     @SerializedName("KGS")
     val kGS: Double,
     @SerializedName("KHR")
@@ -187,7 +187,7 @@ data class Rates(
     @SerializedName("LAK")
     val lAK: Int,
     @SerializedName("LBP")
-    val lBP: Double,
+    val lBP: Int,
     @SerializedName("LD")
     val lD: Int,
     @SerializedName("LKR")
@@ -223,7 +223,7 @@ data class Rates(
     @SerializedName("MVR")
     val mVR: Double,
     @SerializedName("MWK")
-    val mWK: Int,
+    val mWK: Double,
     @SerializedName("MXN")
     val mXN: Double,
     @SerializedName("MYR")
@@ -275,7 +275,7 @@ data class Rates(
     @SerializedName("RUB")
     val rUB: Double,
     @SerializedName("RWF")
-    val rWF: Double,
+    val rWF: Int,
     @SerializedName("SAR")
     val sAR: Double,
     @SerializedName("SBD")
@@ -327,7 +327,7 @@ data class Rates(
     @SerializedName("TWD")
     val tWD: Double,
     @SerializedName("TZS")
-    val tZS: Int,
+    val tZS: Double,
     @SerializedName("UAH")
     val uAH: Double,
     @SerializedName("UGX")
@@ -337,7 +337,7 @@ data class Rates(
     @SerializedName("UYU")
     val uYU: Double,
     @SerializedName("UZS")
-    val uZS: Double,
+    val uZS: Int,
     @SerializedName("VEF_BLKMKT")
     val vEFBLKMKT: Double,
     @SerializedName("VEF_DICOM")

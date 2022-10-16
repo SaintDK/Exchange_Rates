@@ -1,9 +1,9 @@
-package com.example.retrofit_exchange_rates.model.cash
+package com.example.retrofit_exchange_rates
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Cash(
+data class MyData(
     @SerializedName("lastupdate")
     val lastupdate: String,
     @SerializedName("rates")
