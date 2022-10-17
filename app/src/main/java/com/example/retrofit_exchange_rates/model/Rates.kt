@@ -1,4 +1,4 @@
-package com.example.retrofit_exchange_rates
+package com.example.retrofit_exchange_rates.model
 
 
 import com.google.gson.annotations.SerializedName
