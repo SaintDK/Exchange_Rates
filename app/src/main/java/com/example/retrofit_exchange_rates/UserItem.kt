@@ -1,9 +1,9 @@
-package com.example.retrofit_exchange_rates.model
+package com.example.retrofit_exchange_rates
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Rates(
+data class UserItem(
     @SerializedName("AED")
     val aED: Double,
     @SerializedName("AFN")
@@ -35,7 +35,7 @@ data class Rates(
     @SerializedName("BHD")
     val bHD: Double,
     @SerializedName("BIF")
-    val bIF: Int,
+    val bIF: Double,
     @SerializedName("BMD")
     val bMD: Int,
     @SerializedName("BND")
@@ -61,7 +61,7 @@ data class Rates(
     @SerializedName("CAD")
     val cAD: Double,
     @SerializedName("CDF")
-    val cDF: Int,
+    val cDF: Double,
     @SerializedName("CHF")
     val cHF: Double,
     @SerializedName("CLF")
@@ -129,7 +129,7 @@ data class Rates(
     @SerializedName("GMD")
     val gMD: Double,
     @SerializedName("GNF")
-    val gNF: Int,
+    val gNF: Double,
     @SerializedName("GTQ")
     val gTQ: Double,
     @SerializedName("GYD")
@@ -153,7 +153,7 @@ data class Rates(
     @SerializedName("INR")
     val iNR: Double,
     @SerializedName("IQD")
-    val iQD: Int,
+    val iQD: Double,
     @SerializedName("IRR")
     val iRR: Int,
     @SerializedName("ISK")
@@ -171,7 +171,7 @@ data class Rates(
     @SerializedName("KGS")
     val kGS: Double,
     @SerializedName("KHR")
-    val kHR: Int,
+    val kHR: Double,
     @SerializedName("KMF")
     val kMF: Double,
     @SerializedName("KPW")
@@ -185,9 +185,9 @@ data class Rates(
     @SerializedName("KZT")
     val kZT: Double,
     @SerializedName("LAK")
-    val lAK: Int,
+    val lAK: Double,
     @SerializedName("LBP")
-    val lBP: Int,
+    val lBP: Double,
     @SerializedName("LD")
     val lD: Int,
     @SerializedName("LKR")
@@ -205,7 +205,7 @@ data class Rates(
     @SerializedName("MDL")
     val mDL: Double,
     @SerializedName("MGA")
-    val mGA: Int,
+    val mGA: Double,
     @SerializedName("MKD")
     val mKD: Double,
     @SerializedName("MMK")
@@ -275,7 +275,7 @@ data class Rates(
     @SerializedName("RUB")
     val rUB: Double,
     @SerializedName("RWF")
-    val rWF: Int,
+    val rWF: Double,
     @SerializedName("SAR")
     val sAR: Double,
     @SerializedName("SBD")
@@ -337,7 +337,7 @@ data class Rates(
     @SerializedName("UYU")
     val uYU: Double,
     @SerializedName("UZS")
-    val uZS: Int,
+    val uZS: Double,
     @SerializedName("VEF_BLKMKT")
     val vEFBLKMKT: Double,
     @SerializedName("VEF_DICOM")
@@ -347,7 +347,7 @@ data class Rates(
     @SerializedName("VES")
     val vES: Double,
     @SerializedName("VND")
-    val vND: Int,
+    val vND: Double,
     @SerializedName("VTC")
     val vTC: Double,
     @SerializedName("VUV")
