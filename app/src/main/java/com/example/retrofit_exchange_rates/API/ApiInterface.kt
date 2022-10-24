@@ -1,4 +1,4 @@
-package com.aarafrao.yttutorial_2
+package com.example.retrofit_exchange_rates.API
 
 import com.example.retrofit_exchange_rates.User
 import retrofit2.Response

@@ -3,11 +3,10 @@ package com.example.retrofit_exchange_rates
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.aarafrao.yttutorial_2.ApiInterface
+import com.example.retrofit_exchange_rates.API.ApiInterface
 import com.aarafrao.yttutorial_2.Utils
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlin.math.log
 
 
 class MainActivity : AppCompatActivity() {
