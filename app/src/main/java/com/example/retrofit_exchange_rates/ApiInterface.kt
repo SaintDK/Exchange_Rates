@@ -1,4 +1,4 @@
-package com.example.retrofit_exchange_rates.API
+package com.example.retrofit_exchange_rates
 
 import com.example.retrofit_exchange_rates.User
 import retrofit2.Response
