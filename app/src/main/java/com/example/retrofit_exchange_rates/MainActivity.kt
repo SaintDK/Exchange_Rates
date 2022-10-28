@@ -21,12 +21,11 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch {
             val results = user.getUsers()
             if (results.body()!=null){
+
                 Log.d("TAG", "onCreate: ${results.body()}")
+
             }
-
         }
-
-
 
 
     }
