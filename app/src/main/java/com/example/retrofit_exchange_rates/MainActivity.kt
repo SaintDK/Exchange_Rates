@@ -3,7 +3,12 @@ package com.example.retrofit_exchange_rates
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.retrofit_exchange_rates.ApiInterface
 import com.example.retrofit_exchange_rates.Utils
 import com.example.retrofit_exchange_rates.R
@@ -22,21 +27,18 @@ class MainActivity : AppCompatActivity() {
 
         val user = Utils.getInstance().create(ApiInterface::class.java)
 
+
         GlobalScope.launch {
             val results = user.getUsers()
             if (results.body()!=null){
 
                 Log.d("TAG", "onCreate: ${results.body()}")
 
-//                text1.text =
-
             }
         }
-
     }
 
     private fun parseUserItem(result: String){
-
 
         val mainObject = JSONObject(result)
         val item = UserItem(
