@@ -30,22 +30,24 @@ class MainActivity : AppCompatActivity() {
 
         GlobalScope.launch {
             val results = user.getUsers()
-            if (results.body()!=null){
 
-                Log.d("TAG", "onCreate: ${results.body()}")
+//            if (results.body()!=null){
 
-            }
+                Log.d("TAG1", "onCreate: ${results.body()}")
+
+//            }
+
         }
     }
 
-    private fun parseUserItem(result: String){
-
-        val mainObject = JSONObject(result)
-        val item = UserItem(
-            mainObject.getJSONObject("first").getString("url"),
-        )
-        Log.d("TAG1", "targets: ${item.avatar_url}")
-
-    }
+//    private fun parseUserItem(result: String){
+//
+//        val mainObject = JSONObject(result)
+//        val item = UserItem(
+//            mainObject.getJSONObject("first").getString("url"),
+//        )
+//        Log.d("TAG2", "targets: ${item.avatar_url}")
+//
+//    }
 
 }

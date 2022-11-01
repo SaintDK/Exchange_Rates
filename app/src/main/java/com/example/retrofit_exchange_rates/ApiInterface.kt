@@ -1,6 +1,6 @@
 package com.example.retrofit_exchange_rates
 
-import com.example.retrofit_exchange_rates.User
+
 import retrofit2.Response
 import retrofit2.http.GET
 

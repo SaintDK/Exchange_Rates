@@ -1,7 +1,7 @@
-package com.example.retrofit_exchange_rates
-
-data class UserItem(
-    val avatar_url: String,
+//package com.example.retrofit_exchange_rates
+//
+//data class UserItem(
+//    val avatar_url: String,
 //    val events_url: String,
 //    val followers_url: String,
 //    val following_url: String,
@@ -19,4 +19,4 @@ data class UserItem(
 //    val subscriptions_url: String,
 //    val type: String,
 //    val url: String
-)
+//)
