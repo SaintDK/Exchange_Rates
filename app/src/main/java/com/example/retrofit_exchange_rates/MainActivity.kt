@@ -3,51 +3,28 @@ package com.example.retrofit_exchange_rates
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
-import com.android.volley.Request
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
-import com.example.retrofit_exchange_rates.ApiInterface
-import com.example.retrofit_exchange_rates.Utils
-import com.example.retrofit_exchange_rates.R
-import com.example.retrofit_exchange_rates.Utils.BASE_URL
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.example.retrofit_exchange_rates.repository.Repository
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val user = Utils.getInstance().create(ApiInterface::class.java)
-
-
-        GlobalScope.launch {
-            val results = user.getUsers()
-
-//            if (results.body()!=null){
-
-                Log.d("TAG1", "onCreate: ${results.body()}")
-
-//            }
-
-        }
+        val repository = Repository()
+        val viewModelFactory = MainViewModelFactory(repository)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(MainViewModel::class.java)
+        viewModel.getPost()
+        viewModel.myResponse.observe(this, Observer { response ->
+            Log.d("Response", response.lastupdate)
+        })
     }
-
-//    private fun parseUserItem(result: String){
-//
-//        val mainObject = JSONObject(result)
-//        val item = UserItem(
-//            mainObject.getJSONObject("first").getString("url"),
-//        )
-//        Log.d("TAG2", "targets: ${item.avatar_url}")
-//
-//    }
-
 }
