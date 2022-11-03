@@ -108,8 +108,8 @@ data class RatesX(
 //    val eTB: Double,
 //    @SerializedName("ETH")
 //    val eTH: Double,
-//    @SerializedName("EUR")
-//    val eUR: Double,
+    @SerializedName("EUR")
+    val eUR: Double,
 //    @SerializedName("FCT")
 //    val fCT: Double,
 //    @SerializedName("FJD")
@@ -272,8 +272,8 @@ data class RatesX(
 //    val rON: Double,
 //    @SerializedName("RSD")
 //    val rSD: Double,
-//    @SerializedName("RUB")
-//    val rUB: Double,
+    @SerializedName("RUB")
+    val rUB: Double,
 //    @SerializedName("RWF")
 //    val rWF: Double,
 //    @SerializedName("SAR")

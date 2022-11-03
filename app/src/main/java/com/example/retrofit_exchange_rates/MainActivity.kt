@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this, viewModelFactory).get(MainViewModel::class.java)
         viewModel.getPost()
         viewModel.myResponse.observe(this, Observer { response ->
-            Log.d("TAG2", response.rates.bTC.toString())
+            Log.d("TAG2", response.rates.rUB.toString())
+            text1.text = "ruble to dollar " + response.rates.rUB.toString()
         })
     }
 }
