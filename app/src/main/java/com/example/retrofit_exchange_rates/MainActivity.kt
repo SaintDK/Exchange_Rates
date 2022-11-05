@@ -25,7 +25,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.getPost()
         viewModel.myResponse.observe(this, Observer { response ->
             Log.d("TAG2", response.rates.rUB.toString())
-            text1.text = "ruble to dollar " + response.rates.rUB.toString()
+            textRUB.text = response.rates.rUB.toString()
+            textEUR.text = response.rates.eUR.toString()
+            textDogeCoin.text = response.rates.dOGE.toString()
         })
     }
 }

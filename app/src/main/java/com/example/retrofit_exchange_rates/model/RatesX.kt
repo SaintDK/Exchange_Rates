@@ -170,8 +170,8 @@ data class RatesX(
 //    val kES: Double,
 //    @SerializedName("KGS")
 //    val kGS: Double,
-//    @SerializedName("KHR")
-//    val kHR: Double,
+    @SerializedName("KHR")
+    val kHR: Double,
 //    @SerializedName("KMF")
 //    val kMF: Double,
 //    @SerializedName("KPW")
@@ -364,8 +364,8 @@ data class RatesX(
 //    val xCD: Double,
 //    @SerializedName("XDR")
 //    val xDR: Double,
-//    @SerializedName("XMR")
-//    val xMR: Double,
+    @SerializedName("XMR")
+    val xMR: Double,
 //    @SerializedName("XOF")
 //    val xOF: Double,
 //    @SerializedName("XPD")
